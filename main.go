@@ -6,8 +6,10 @@ func newCard() string {
 
 func main() {
 	cards := newDeck()
-	hand, remainingDeck := deal(cards, 5)
-	hand.print()
-	remainingDeck.print()
+	cards.shuffle()
+	cards.print()
+	// hand, remainingDeck := deal(cards, 5)
+	// hand.print()
+	// remainingDeck.print()
 
 }
