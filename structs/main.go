@@ -15,18 +15,16 @@ type person struct {
 
 func main() {
 	jim := person{firstName: "Jim", lastName: "Party", contractInfo: contractInfo{email: "jim@gmail.com", zipCode: 70000}}
-	test := 123
-	jimPointer := &jim
-	fmt.Println(&test)
+	// jimPointer := &jim
 
-	jimPointer.updateName("Truyen")
+	jim.updateName("Truyen")
 	// jim.updateName("Truyen")
-	jim.print()
+	// jim.print()S
 }
 
 func (pointerToPersion *person) updateName(newFirstName string) {
 	fmt.Println(pointerToPersion)
-	(*pointerToPersion).firstName = newFirstName
+	// (*pointerToPersion).firstName = newFirstName
 
 }
 
